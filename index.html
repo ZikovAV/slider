@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Слайдер изображений</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider-wrapper">
+        <h1 class="title">Галерея изображений</h1>
+        
+        <div class="slider-container">
+          <button class="nav-btn prev-btn" id="prevBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          
+          <div class="slider">
+            <div class="slide-track" id="slideTrack">
+              <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=500&fit=crop" alt="Спортивный автомобиль" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=500&fit=crop" alt="Классический автомобиль" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=500&fit=crop" alt="Спортивный автомобиль" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=500&fit=crop" alt="Мощный автомобиль" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&h=500&fit=crop" alt="Элегантный автомобиль" />
+              </div>
+            </div>
+          </div>
+          
+          <button class="nav-btn next-btn" id="nextBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="slider-info">
+          <div class="image-counter" id="imageCounter">
+            Изображение 1 из 5
+          </div>
+          
+          <div class="dots-container" id="dotsContainer">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
